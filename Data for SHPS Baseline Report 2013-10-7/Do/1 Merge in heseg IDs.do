@@ -97,6 +97,8 @@
 
 *Load SHPS data
 	use "Original/shps_baseline_pii_removed.dta" ,clear // This is the final dataset with all Districts/Cities appended
+		/* NOTE: PII was removed and the two datasets appended but otherwise this is basically the raw dataset */
+		
 	drop if mi(target_id)
 
 	/*
